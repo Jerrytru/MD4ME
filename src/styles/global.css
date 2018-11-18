@@ -1,19 +1,66 @@
-#Language-selection {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    border: solid;
-    background-color: transparent;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
+	transition: all 2s;
 }
 
-
-.language {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+#bg {
+    display: grid;
+    align-content: stretch;
     background-image: url("http://www.applerubber.com/hot-topics-for-engineers/wp-content/uploads/2013/11/medical1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
+
+select {
+	margin: 0 auto;
+	color: #EC6F66;
+	width: 310px;
+	padding: 15px;
+	height: 25px;
+	cursor: pointer;
+	background: url(http://sharpik.com/wip/cuteselect/arrow.png) 295px 12px no-repeat white;
+}
+
+select:hover {
+	background-color: transparent;
+	color: white;
+	padding: 15px 5px 15px 25px;
+}
+
+
+select option {
+	background-color: white;
+	color: gray;
+	width: 310px;
+	padding: 10px 15px;
+	height: 20px;
+	cursor: pointer;
+}
+
+select option:hover {
+	padding-left: 25px;
+	width: 270px;
+	color: #EC6F66;
+}
+
+
+.Selector {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width:400px;
+    height: 50px;
+    -moz-border-radius: 9px 9px 9px 9px;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border-radius: 9px 9px 9px 9px;
+    box-shadow: 1px 1px 11px #c4b70a;
+    background: rgb(97, 150, 185) 
+}
+
+
+
+
+
+

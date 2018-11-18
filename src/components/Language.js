@@ -6,9 +6,8 @@ import '../styles/global.css';
 class Language extends React.Component {
   render() {
       return (
-    <div class="language">
-    <div id="Language-selection">
-    <form>
+        <div id="bg">
+        <div id="Container">
         <select>
             <option value="Directory">--Please choose your prefered language.--</option>
             <option value="Spanish">Spanish</option>
@@ -18,8 +17,7 @@ class Language extends React.Component {
             <option value="Russian">Russian</option>
             <option value="Chinesse">Chinesse</option>
         </select>
-    </form>
-    </div>
+        </div>
     </div>
       )
     }

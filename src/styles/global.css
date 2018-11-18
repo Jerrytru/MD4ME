@@ -1,0 +1,19 @@
+#Language-selection {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: solid;
+    background-color: transparent;
+    padding: 0;
+}
+
+
+.language {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url("http://www.applerubber.com/hot-topics-for-engineers/wp-content/uploads/2013/11/medical1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Route, Link, BrowserRouter} from 'react-router-dom';
 import Language from './components/Language';
+import Ratings from './components/Ratings';
 
 class Root extends React.Component {
 
@@ -9,15 +10,18 @@ class Root extends React.Component {
 		return (
 			<BrowserRouter>
 				<div>
-					<div id="select">
+					<div id="header">
 						<Link to="/Language">Language</Link>
 					</div>
-					<Route exact path="/" component={ Language } />
+					<div>
+						<Link to="/Ratings">Ratings</Link>
+					</div>
+					<Route exact path="/Language" component={ Language } />
+					<Route exact path="/Ratings" component={ Ratings } />
 				</div>
 			</BrowserRouter>
 		)
 	}
 	
 }
-
 ReactDOM.render(<Root />, document.getElementById('root'));

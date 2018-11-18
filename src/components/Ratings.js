@@ -1,12 +1,15 @@
 import React from 'react';
-import '../styles/global.css';
+import '../styles/Ratings.css';
 
 
-class Language extends React.Component {
+class Ratings extends React.Component {
     render() {
         return (
-      <div id="Container1">
-      </div>
+          <div id="container">
+          <div class="rating">
+          <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div>
+          </div>
         )
       }
     }

@@ -9,7 +9,7 @@ class Language extends React.Component {
         <div id="bg">
         <div class="container">
         <select>
-            <option value="Directory">Please choose your prefered language</option>
+            <option disabled>Please choose your prefered language</option>
             <option value="Spanish">Spanish</option>
             <option value="French">French</option>
             <option value="Creole">Creole</option>

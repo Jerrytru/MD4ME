@@ -10,10 +10,9 @@ import '../styles/nav.css'
   render() {
     return(
       <div className="nav">
+        <img className="pic1" src={medicalsnake} alt="symbol"></img>
         <img className="pic"src={logo} alt="logo"></img>
         <img className="pic1" src={medicalsnake} alt="symbol"></img>
-
-        <p>test</p>
       </div>
 
       )

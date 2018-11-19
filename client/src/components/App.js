@@ -5,9 +5,10 @@ import Nav from './Nav';
 import Doctors from './Doctors';
 import Config from './Config';
 import 'bulma/css/bulma.min.css';
+import Body from './Body';
 
 class App extends React.Component {
-  
+
   state = {
     doctors: null
   }
@@ -38,9 +39,10 @@ class App extends React.Component {
           <Form getDoctor={this.getDoctor}/>
           <br />
           <Doctors doctors={this.state.doctors}/>
+        </div>
+        <Body />
       </div>
-      </div>
-      
+
     )
   }
 }

@@ -22,6 +22,3 @@ class Language extends Component {
   }
 
   export default Language;
-
-
-

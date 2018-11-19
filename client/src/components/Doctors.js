@@ -26,7 +26,7 @@ function Doctors(props) {
             let practice = doctor.practices[i];
             practices.push(
             <li key={i + '-practice'}>
-                {practice.visit_address.state}, {practice.visit_address.city}, {practice.visit_address.street}, {practice.name}
+               {practice.name}, {practice.visit_address.street}, {practice.visit_address.city}, {practice.visit_address.state}, {practice.visit_address.zip}  
             </li>
             );
         }
@@ -52,7 +52,7 @@ function Doctors(props) {
     }
     if(doctors.length === 0) {
         return (
-        <div className="notification is-warning">
+        <div className="notification is-warning has-text-centered has-text-danger">
             <p>Nothing was found, please try again.</p>
         </div>
         );

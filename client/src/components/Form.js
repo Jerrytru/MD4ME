@@ -4,7 +4,12 @@ const Form = props => (
 	<form className="box" onSubmit={props.getDoctor}>
         <div className="field">
             <div className="control">
-                <input required className="input" name="location" placeholder="Location slugs (e.g. 'ca-berkeley')"/>
+                <input required className="input"  name="location" placeholder="Location slugs (e.g. 'ca-berkeley')"/>
+            </div>
+        </div>
+        <div className="field">
+            <div className="control">
+                <input required className="input"  name="city" placeholder="Location slugs (e.g. 'ca-berkeley')"/>
             </div>
         </div>
         <div className="field">

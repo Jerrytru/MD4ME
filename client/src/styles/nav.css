@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pic {
+  width: 45vw;
+  height: 25vh;
+}
+ .pic1m {
+width: 15vw;
+height: 35vh;
+
+ }
+
+
+ 

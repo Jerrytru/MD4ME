@@ -1,7 +1,8 @@
 import React from 'react';
-import Titles from './components/Titles';
-import Form from './components/Form';
-import Doctors from './components/Doctors';
+import Titles from './Titles';
+import Form from './Form';
+import Nav from './Nav';
+import Doctors from './Doctors';
 import Config from './Config';
 import 'bulma/css/bulma.min.css';
 
@@ -27,13 +28,17 @@ class App extends React.Component {
 
   render() {
     return(
-      <div className="container">
-        <Titles/>
-        <br />
-        <Form getDoctor={this.getDoctor}/>
-        <br />
-        <Doctors doctors={this.state.doctors}/>
+      <div>
+        <Nav />
+        <div className="container">
+          <Titles/>
+          <br />
+          <Form getDoctor={this.getDoctor}/>
+          <br />
+          <Doctors doctors={this.state.doctors}/>
       </div>
+      </div>
+      
     )
   }
 }

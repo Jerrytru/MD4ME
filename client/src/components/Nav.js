@@ -1,5 +1,4 @@
 import React from 'react';
-import App from './App';
 import logo from '../Images/logo.png';
 import medicalsnake from '../Images/medicalsnake.png';
 import '../styles/nav.css'

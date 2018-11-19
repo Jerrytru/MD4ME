@@ -4,6 +4,7 @@ import {Route, Link, BrowserRouter} from 'react-router-dom';
 import Language from './components/Language';
 import Ratings from './components/Ratings';
 
+
 class Root extends React.Component {
 
 	render() {

@@ -10,6 +10,7 @@
   import vaccine from '../Images/vaccine.gif';
   import logo from '../Images/appstore.png';
   import googleplay from '../Images/googleplay.png';
+  import familypic from '../Images/family.gif';
 
 
 
@@ -21,25 +22,34 @@
 
 
 
+
   class Body extends React.Component{
+    constructor() {
+  super();
+  this.handleSubmit = this.handleSubmit.bind(this);
+}
+handleSubmit = event => {
+  event.preventDefault();
+  console.log(this.inputNode.value)
+}
 
     render(){
 
   return (
+
   <div>
 
-  <div className="content">
-    <h1 className="items">Download MD4ME now. </h1>
-
-      <p>Find nearby doctors in your area </p>
-      <p>Browse by Insurance</p>
-      <p>Browse by Specialty</p>
-      <h3>Send me a link to the app</h3>
+  <div className="content has-text-centered is-marginless">
+    <h1>Download MD4ME now. </h1>
+      <p className="is-vcentered is-mobile">Find nearby doctors in your area </p>
+      <p className= "is-vcentered is-mobile">Browse by Insurance</p>
+      <p className="is-vcentered is-mobile">Browse by Specialty</p>
+      <h3 className="is-vcentered is-mobile">Send me a link to the app</h3>
       </div>
 
 
   <div className = "">
-  <figure className ="media-right">
+  <figure class="columns is-centered is-vcentered is-mobile">
   <p className = "image is-128x128" as D>
   <img id='vac'src={vaccine} style={{ }}/>
   </p>
@@ -47,9 +57,9 @@
   </div>
 
 
-  <div className="field has-addons">
-    <div className="control">
-      <input className="input" type="text" placeholder="Find a repository"></input>
+  <div className="field has-addons" class="columns is-centered is-vcentered is-mobile">
+    <div className="control" >
+      <input class="columns is-centered is-vcentered is-mobile" className="input" type="text" placeholder="Find a repository"></input>
     </div>
     <div className="control">
       <a className="button is-info">
@@ -58,26 +68,25 @@
     </div>
     </div>
 
-    <div className="columns is-mobile">
-      <div className="column">
-      <figure className ="media-leftt">
-      <p className = "image is-128x128">
-      <img src={logo} alt = "doc"/>
-      </p>
-      </figure>
-      <figure >
-      <p className = "image is-128x128">
-      <img src={googleplay} alt ="doc"  />
-      </p>
-      </figure>
-      </div>
-
-      </div>
 
 
 
 
-  </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
   )
 
     }

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../styles/global.css';
 
-class Language extends React.Component {
+class Language extends Component {
   render() {
       return (
         <div id="bg">

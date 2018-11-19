@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../styles/global.css';
 
-class Ratings extends React.Component {
+class Ratings extends Component {
     render() {
         return (
           <div id="container">

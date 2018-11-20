@@ -18,10 +18,10 @@ class App extends React.Component {
         <Nav />
       <ul>
          <li><Link to="/">Home</Link></li>
-         <li><Link to="/Language">Language</Link></li>
-         <li><Link to="/Ratings">Ratings</Link></li>
-         <li><Link to="/About" >About</Link></li>
-         <li><Link to="/Contact">Contact</Link></li>
+         <li><Link to="/Language"></Link></li>
+         <li><Link to="/Ratings"></Link></li>
+         <li><Link to="/About" ></Link></li>
+         <li><Link to="/Contact"></Link></li>
       </ul>
       <Route exact path="/" component={Home} />
       <Route path="/Language" component={Language} />

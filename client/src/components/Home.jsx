@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import Titles from './Titles';
 import Form from './Form';
-import Nav from './Nav';
+//import Nav from './Nav';
 import Doctors from './Doctors';
 import Config from './Config';
 import 'bulma/css/bulma.min.css';
 import Body from './Body';
 import '../styles/global.css';
+import { runInThisContext } from 'vm';
 
 
 class Home extends Component {
@@ -18,7 +19,8 @@ class Home extends Component {
       selectedInsurance: null,
       selectedInsurancePlans: [],
       selectedPlanName: null,
-      selectedPlan: {}
+      selectedPlan: {},
+      search: false
     }
     this.updateSelectedInsurance = this.updateSelectedInsurance.bind(this);
     this.updateSelectedPlan = this.updateSelectedPlan.bind(this);
@@ -44,21 +46,25 @@ class Home extends Component {
     e.preventDefault();
 
     const state = document.getElementById('state-select').value;
-    console.log('State:', state);
     const city = e.target.elements.city.value;
+    console.log("City", city)
     let location = "";
     if(city) {
       location = `${state}-${city}`.toLocaleLowerCase();
+      console.log(location);
     } else {
       location = state.toLocaleLowerCase();
     }
     const specialty = e.target.elements.specialty.value;
-    const insurance = this.state.selectedPlan.uid;
+    let insurance = this.state.selectedPlan.uid;
+    if(!insurance) insurance = "";
+    console.log(location, specialty, insurance);
     const api_call = await fetch(`https://api.betterdoctor.com/2016-03-01/doctors?limit=10&user_key=${Config.API_KEY}&location=${location}&specialty_uid=${specialty}&insurance_uid=${insurance}`);
     const data = await api_call.json();
+    console.log(data.data)
 
     this.setState({
-      doctors: data.data
+      doctors: data.data, search: true
     });
 
   }
@@ -84,9 +90,10 @@ class Home extends Component {
           insurances={this.state.insurance}
           selectedPlans={this.state.selectedInsurancePlans}
           updateSelectedInsurance={this.updateSelectedInsurance}
-          updateSelectedPlan={this.updateSelectedPlan}/>
+          updateSelectedPlan={this.updateSelectedPlan}
+          />
           <br />
-          <Doctors doctors={this.state.doctors}/>
+          <Doctors doctors={this.state.doctors} search={this.state.search}/>
         </div>
         <Body />
       </div>

@@ -1,10 +1,9 @@
 import React from "react";
-import '../styles/Titles.css'
 
 const Titles = () => (
-	<div className="hero has-text-centered ">
-		<h1 className="title" > LET'S GET STARTED: </h1>
-		<h3 className="subheader">SEARCH FOR DOCTORS</h3>
+	<div className="hero has-text-centered x-logo-div">
+		<h1 className="title has-text-white has-text-bold x-logo">Find4MD</h1>
+		<h3 className="subtitle">Search for doctors</h3>
 	</div>
 );
 

@@ -5,7 +5,7 @@ import '../styles/global.css';
 class About extends Component {
   render() {
     return (
-      <h1>Contact Us</h1>
+      <h1>Changing contacts</h1>
     )
   }
 }

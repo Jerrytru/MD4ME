@@ -1,74 +1,9 @@
-<<<<<<< HEAD
 
-/* * {
-	margin: 0;
-	padding: 0;
-    transition: all 2s;
-    font-family: sans-serif;
-    font-size: 20px;
-}
-
-body{
-    position: relative
-}
-
-#bg {
-    display: grid;
-    align-content: stretch;
-    background-image: url("http://www.applerubber.com/hot-topics-for-engineers/wp-content/uploads/2013/11/medical1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-
-}
-
-
-.container {
-    display: flex;
-    justify-content: center;
-    margin-top: 250px;
-    margin-bottom: 250px;
-}
-
-select {
-    border-radius: 30px;
-}
-
-
-select:hover {
-	background-color: transparent;
-	color: white;
-    padding: 15px 5px 15px 25px;
-    border-radius: 30px;
-}
-
-
-select option {
-	background-color: rgb(209, 212, 18);
-	color: rgb(26, 9, 9);
-	width: 200px;
-	padding: 10px 10px;
-	height: 10px;
-}
-
-select option:hover {
-	padding-left: 25px;
-	width: 300px;
-    color: rgba(25, 216, 216, 0.486);
-}
-
-#container {
-    display: grid;
-    align-content: stretch;
-    background-image: url("https://www.pwc.co.uk/healthcare/assets/hero-lp-healthcare.jpg");
-    background-repeat: no-repeat;
-=======
 html {
-    background: url(https://xenonhealth.com/wp-content/uploads/2017/09/Doctor.jpeg) no-repeat center center fixed; 
+    background: url(https://xenonhealth.com/wp-content/uploads/2017/09/Doctor.jpeg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
->>>>>>> 19d81272b025380376404632f9d5ff0c3d947c4e
     background-size: cover;
   }
   .x-logo-div {
@@ -78,18 +13,10 @@ html {
     font-size: 5rem;
   }
   .x-footer {
-    position: relative;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     padding: 1rem;
     background-color: rgba(255,255,255,0.5);
   }
-
-<<<<<<< HEAD
-  .linked{
-      position: absolute;
-      margin-top: 80px
-  } */
-=======
->>>>>>> 19d81272b025380376404632f9d5ff0c3d947c4e

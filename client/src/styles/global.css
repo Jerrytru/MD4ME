@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /* * {
 	margin: 0;
@@ -61,42 +62,34 @@ select option:hover {
     align-content: stretch;
     background-image: url("https://www.pwc.co.uk/healthcare/assets/hero-lp-healthcare.jpg");
     background-repeat: no-repeat;
+=======
+html {
+    background: url(https://xenonhealth.com/wp-content/uploads/2017/09/Doctor.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+>>>>>>> 19d81272b025380376404632f9d5ff0c3d947c4e
     background-size: cover;
-    height: 100vh;
   }
-
-  .rating {
-    display: flex;
-    justify-content: center;
-    border: solid 2px white;
-    border-radius: 30px;
-    margin: 300px 500px 300px 500px;
+  .x-logo-div {
+      margin-top: 10%;
   }
-
-  .rating:hover {
-    background-color: transparent;
-    color: white;
-    box-sizing: content-box;
-    padding: 25px 25px 25px 25px;
-    border-radius: 30px;
+  .x-logo {
+    font-size: 5rem;
   }
-
-  .rating {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-  }
-  .rating > span {
-    display: inline-block;
+  .x-footer {
     position: relative;
-    width: 3.0em;
-  }
-  .rating > span:hover:before,
-  .rating > span:hover ~ span:before {
-     content: "\2605";
-     position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(255,255,255,0.5);
   }
 
+<<<<<<< HEAD
   .linked{
       position: absolute;
       margin-top: 80px
   } */
+=======
+>>>>>>> 19d81272b025380376404632f9d5ff0c3d947c4e

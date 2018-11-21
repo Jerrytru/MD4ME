@@ -79,55 +79,58 @@ const  populateStates = () => {
 }
 
 const Form = props => (
-	<form className="box" onSubmit={props.getDoctor}>
-        <div className="field">
-            <div className="control">
-                <div class="select">
-                    <select name="location" id="state-select" required>
-                        <option>Select dropdown</option>
-                        { populateStates() }
-                    </select>
+	<form id="api-form" onSubmit={props.getDoctor}>
+        <div className="box">
+            <div className="columns">
+                <div className="column is-6">
+                    <div className="field">
+                        <div className="control is-expanded">
+                            <div class="select is-fullwidth">
+                                <select required name="location" id="state-select">
+                                    <option disabled selected value="">Select state</option>
+                                    { populateStates() }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="field">
+                        <div className="control is-expanded">
+                            <div class="select is-fullwidth">
+                                <select name= "location" onChange={(e) => {props.updateSelectedInsurance(e.target.value)}}>
+                                    <option>Select insurance</option>
+                                    { populateInsurance(props) }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="field">
+                        <div className="control is-expanded">
+                            <div class="select is-fullwidth">
+                                <select onChange={(e) => {props.updateSelectedPlan(e.target.value)}}>
+                                    <option>Select plan</option>
+                                    { populateInsurancePlans(props) }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div className="field">
-            <div className="control">
-                <div class="select">
-                    <select name= "location" required onChange={(e) => {props.updateSelectedInsurance(e.target.value)}}>
-                        <option>Select dropdown</option>
-                        { populateInsurance(props) }
-                    </select>
+                <div className="column is-6">
+                    <div className="field">
+                        <div className="control">
+                            <input className="input"  name="city" placeholder="Location slugs (e.g. 'city')"/>
+                        </div>
+                    </div>
+                    <div className="field">
+                        <div className="control">
+                            <input className="input" name="specialty" placeholder="UID of a specialty (e.g. 'pediatrician')"/>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div className="field">
-            <div className="control">
-                <div class="select">
-                    <select name= "location" required onChange={(e) => {props.updateSelectedPlan(e.target.value)}}>
-                        <option>Select dropdown</option>
-                        { populateInsurancePlans(props) }
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div className="field">
-            <div className="control">
-                <input className="input"  name="city" placeholder="Location slugs (e.g. 'ca-berkeley')"/>
-            </div>
-        </div>
-        <div className="field">
-            <div className="control">
-                <input className="input" name="specialty" placeholder="UID of a specialty (e.g. 'pediatrician')"/>
-            </div>
-        </div>
-        <div className="field">
-            <div className="control">
-                <input className="input" name="insurance" placeholder="UID of an insurance plan (e.g. 'aetna-aetnabasichmo')"/>
             </div>
         </div>
         <div className="field">
             <div className="control has-text-centered">
-		        <button type="submit" className="button is-medium is-info is-rounded">Find</button>
+                <button type="submit" className="button is-large is-white has-text-info">Search</button>
             </div>
         </div>
 	</form>

@@ -1,10 +1,10 @@
 import React from "react";
 
 function Doctors(props) {
-    if(props.doctors === null) {
+    if(props.doctors.length === 0 && props.search===false) {
         return (
-        <div className="notification is-info">
-            <p>Try to search somebody.</p>
+        <div className="searchforadoctor">
+            <p></p>
         </div>
         );
     }

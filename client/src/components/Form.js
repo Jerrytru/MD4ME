@@ -130,7 +130,7 @@ const Form = props => (
         </div>
         <div className="field">
             <div className="control has-text-centered">
-                <button type="submit" className="button is-large is-white has-text-info">Find</button>
+                <button type="submit" className="button is-large is-white has-text-info">Search</button>
             </div>
         </div>
 	</form>

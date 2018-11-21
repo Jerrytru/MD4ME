@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import '../styles/global.css';
 
-class About extends Component {
+class Title extends Component {
   render() {
     return (
-        <div></div>
+        <div class="ChooseDoc">Choose a doctor!</div>
     )
   }
 }
       
 
-export default About;
+export default Title;

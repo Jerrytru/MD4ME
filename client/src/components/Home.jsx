@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
-import Titles from './Titles';
+import Title from './Title';
 import Form from './Form';
-//import Nav from './Nav';
 import Doctors from './Doctors';
 import Config from './Config';
 import 'bulma/css/bulma.min.css';
 import Body from './Body';
 import '../styles/global.css';
-import { runInThisContext } from 'vm';
 
 
 class Home extends Component {
@@ -84,7 +82,7 @@ class Home extends Component {
     return (
       <div>
         <div className="container">
-          <Titles/>
+          <Title/>
           <br />
           <Form getDoctor={this.getDoctor} getInsurance={this.getInsurance}
           insurances={this.state.insurance}

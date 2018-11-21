@@ -1,12 +1,13 @@
 import React from "react";
 
-const Titles = () => (
+const Body = () => (
 	<div className="footer x-footer">
-		<div className="buttons is-centered">
-      <button className="button is-small is-info is-outlined">Facebook</button>
-      <button className="button is-small is-info is-outlined">Twitter</button>
+	<div className="buttons is-centered">
+      <button className="buttonsmall">Facebook</button>
+      <button className="buttonsmall">Twitter</button>
+      <button className="buttonsmall">instagram</button>
     </div>
 	</div>
 );
 
-export default Titles;
+export default Body;
